@@ -5,12 +5,7 @@ import promptSchemaMain from "./prompts-schema/prompt-schema-main.js";
 import createQRCode from "./services/qr-code/create.js";
 import createPassword from "./services/password/create.js";
 
-const QRCode = require('qrcode');
 
-QRCode.toFile('qrcode.png', 'https://exemplo.com', function (err) {
-  if (err) throw err;
-  console.log('QR Code gerado com sucesso!');
-});
 
 
 async function main() {
